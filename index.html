@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+
+        <style type="text/css">
+            html { background: #FFF; }
+
+            body {
+                margin: 40px;
+
+                /* Typography design as !important */
+                font-family: Roboto, Arial !important;
+                font-size: 14px;
+                letter-spacing: 0.3px !important;
+            }
+
+            a:link,
+            a:visited {
+                text-decoration: none;
+                color: #1FBDA2;
+            }
+
+            section#hello {
+                font-size: 22px;
+                font-weight: bold;
+                color: #1FBDA2;
+            }
+
+            section#see-you {
+                font-size: 16px;
+                font-weight: bold;
+
+                margin-bottom: 40px;
+            }
+
+            section#signature { font-size: 13px; }
+
+            section#signature img /* logo */ {
+                width: 100px;
+                margin: 8px 30px 0px 0px;
+            }
+
+            section#hello,
+            section#message { margin-bottom: 30px; }
+
+            /* Classes in signature */
+                .hglth { color: #1FBDA2; }
+                .name { font-size: 17px; }
+                .separator {
+                    padding: 0px 0px 0px 30px;
+                    border-left: 3px solid #1FBDA2;
+                }
+            /* end */
+        </style>
+    </head>
+
+    <body>
+        <!-- SALUDO -->
+        <section id="hello">
+            Hola @nombre!
+        </section>
+
+        <!-- MENSAJE -->
+        <section id="message">
+            Mensaje aquí.
+        </section>
+        
+        <!-- DESPEDIDA -->
+        <section id="see-you">
+            Estamos en contacto.
+        </section>
+
+         <!-- FIRMA -->
+        <section id="signature">
+            <table cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img alt="Ensambler" src="http://ensambler.cl/public/mail/resources/logo.png" />
+                        </td>
+
+                        <td class="separator">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding-bottom: 8px">
+                                            <span class="hglth name"><b>Nombre Apellido Apellido.</b></span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="padding-bottom: 8px">
+                                            <div>
+                                                <b>CARGO | Ensambler 2019.</b>
+                                            </div>
+                                        </td> 
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <span class="hglth"><b>T:&nbsp;</b></span>
+                                                <a href="tel:+56%2001234%205678">+56 0 1234 5678</a>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <span class="hglth"><b>E:&nbsp;</b></span>
+                                                <a>socio@ensambler.cl</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="padding-top: 8px">
+                                            <div>
+                                                <a href="http://www.ensambler.cl/" target="_blank">
+                                                    <b>www.ensambler.cl</b>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- /FIRMA -->
+    </body>
+</html>
