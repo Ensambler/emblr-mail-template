@@ -10,18 +10,18 @@
             html { background: #FFF; }
 
             body {
-                margin: 40px;
+                margin: 30px !important;
 
                 /* Typography design as !important */
-                font-family: Roboto, Arial !important;
+                font-family: Roboto !important;
                 font-size: 14px;
                 letter-spacing: 0.3px !important;
             }
 
             a:link,
             a:visited {
-                text-decoration: none;
-                color: #1FBDA2;
+                text-decoration: none !important;
+                color: #1FBDA2 !important;
             }
 
             section#hello {
@@ -36,13 +36,13 @@
             }
 
             section#see-you {
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: bold;
 
                 margin-bottom: 40px;
             }
 
-            section#signature { font-size: 13px; }
+            section#signature { font-size: 13px !important; }
 
             section#signature img /* logo */ {
                 width: 100px;
@@ -54,7 +54,7 @@
 
             /* Classes in signature */
                 .hglth { color: #1FBDA2; }
-                .name { font-size: 17px; }
+                .name { font-size: 17px !important; }
                 .separator {
                     padding: 0px 0px 0px 30px;
                     border-left: 3px solid #1FBDA2;
@@ -66,12 +66,12 @@
     <body>
         <!-- SALUDO -->
         <section id="hello">
-            Hola @nombre!
+            Hola @Nombre.
         </section>
 
         <!-- MENSAJE -->
         <section id="message">
-            Mensaje aquí.
+            <div>Mensaje aquí.</div>
         </section>
         
         <!-- DESPEDIDA -->
@@ -109,7 +109,7 @@
                                         <td>
                                             <div>
                                                 <span class="hglth"><b>T:&nbsp;</b></span>
-                                                <a href="tel:+56%2001234%205678">+56 0 1234 5678</a>
+                                                <a href="tel:+56%2001234%205678" style="color: #000 !important">+56 0 1234 5678</a>
                                             </div>
                                         </td>
                                         
