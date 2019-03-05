@@ -3,9 +3,32 @@
 <html lang="es" style="background:#FFF!important">
     <head>
         <meta charset="UTF-8">
+
+        <style type="text/css" media="only screen and (max-width: 640px)">
+            /* RESPONSIVE */
+            @media only screen and (max-width: 640px) {
+                #body { padding: 5px !important }
+                #hello { font-size: 19px !important; padding-bottom: 27px !important }
+                #message { font-size: 13px !important; padding-left: 10px !important }
+                #see-you { font-size: 14px !important; padding-bottom: 40px !important }
+                #signature img { width: 70px !important; padding-right: 20px !important }
+                #signature a, #signature .info b { font-size: 12px !important }
+                /* Classes */
+                .nm { font-size: 14px !important; } /* not working */
+                .separator { padding-left: 20px !important }
+                .pdt { padding-top: 2px !important } /* ensambler.cl */
+                .pdb { padding-bottom: 2px !important } /* cargo */
+            }
+        </style>
+
+        <style type="text/css" media="only screen and (min-width: 640px)">
+            @media only screen and (min-width: 640px) {
+                body { padding: 30px !important }
+            }
+        </style>
     </head>
 
-    <body style="background:#FFF; padding:30px!important; font-family:Roboto,Arial!important; font-size:14px; letter-spacing:0.3px!important">
+    <body id="body" style="background:#FFF; font-family:Roboto,Arial!important; font-size:14px; letter-spacing:0.3px!important">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
 
         <!-- SALUDO -->
@@ -29,29 +52,29 @@
                 <tbody>
                     <tr>
                         <td>
-                            <img alt="ENSAMBLER" src="http://ensambler.cl/public/mail/resources/logo.png" style="width:100px; padding:5px 35px 0px 0px" />
+                            <img alt="ENSAMBLER" src="http://ensambler.cl/public/mail/resources/logo.png" style="width:100px; padding:5px 30px 0px 0px" />
                         </td>
 
-                        <td class="separator" style="padding:0px 0px 0px 35px; border-left:4px solid #1FBDA2">
+                        <td class="separator" style="padding:0px 0px 0px 30px; border-left:4px solid #1FBDA2">
                             <table cellspacing="0" cellpadding="0" border="0">
                                 <tbody>
                                     <tr>
-                                        <td style="padding-bottom:8px">
-                                            <span class="hglth name" style="color:#1FBDA2"><b style="font-size:17px!important">Nombre Apellido Apellido.</b></span>
+                                        <td class="pdb" style="padding-bottom:8px">
+                                            <span class="hglth name" style="color:#1FBDA2"><b class="nm" style="font-size:17px">Nombre Apellido Apellido.</b></span>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td style="padding-bottom:8px">
-                                            <div>
-                                                <b style="font-size:13px">CARGO | Ensambler 2019.</b>
+                                        <td class="pdb" style="padding-bottom:8px">
+                                            <div class="info">
+                                                <b style="font-size:13px">CARGO | Ensambler.</b>
                                             </div>
                                         </td> 
                                     </tr>
 
                                     <tr>
                                         <td>
-                                            <div style="font-size:13px">
+                                            <div class="info" style="font-size:13px">
                                                 <span class="hglth" style="color:#1FBDA2"><b>T:&nbsp;</b></span>
                                                 <a href="tel:+56%2001234%205678" style="text-decoration:none!important; color: #000">+56 0 1234 5678</a>
                                             </div>
@@ -61,16 +84,16 @@
 
                                     <tr>
                                         <td>
-                                            <div style="font-size:13px">
+                                            <div class="info" style="font-size:13px">
                                                 <span class="hglth" style="color:#1FBDA2"><b>E:&nbsp;</b></span>
-                                                <a>socio@ensambler.cl</a>
+                                                <a style="text-decoration:none!important; color: #000">socio@ensambler.cl</a>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td style="padding-top:8px">
-                                            <div>
+                                        <td class="pdt" style="padding-top:8px">
+                                            <div class="info">
                                                 <a href="http://www.ensambler.cl/" target="_blank" style="font-size:13px; text-decoration:none!important; color:#1FBDA2">
                                                     <b>www.ensambler.cl</b>
                                                 </a>
